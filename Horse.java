@@ -1,8 +1,9 @@
 package Animals;
 
-public class Horse extends Animals
+public class Horse extends Animals implements Creature
 {
     private String breed;
+
     public void sleep()
     {
         System.out.println("Horse is sleeping...");
@@ -21,7 +22,7 @@ public class Horse extends Animals
     }
     public void display()
     {
-        System.out.println(this.getName() + " is a horse ");
+        System.out.println(this.name + " is a horse ");
         makeNoise();
     }
 }

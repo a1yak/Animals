@@ -1,7 +1,8 @@
 package Animals;
 
-public class Cat extends Animals{
+public class Cat extends Animals implements Creature{
     private int age;
+
     public void eat(String food)
     {
         System.out.println("Cat eats "+ food);
@@ -21,7 +22,7 @@ public class Cat extends Animals{
     }
     public void display()
     {
-        System.out.println(this.getName() + " is a cat ");
+        System.out.println(this.name + " is a cat ");
         makeNoise();
     }
 }

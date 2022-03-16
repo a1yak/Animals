@@ -1,18 +1,12 @@
 package Animals;
 
-public abstract class Animals
+public abstract class Animals implements Creature
 {
-    private String name;
-    private String food;
-    private String location;
-    public void makeNoise()
-    {
-System.out.println("Some noise...");
-    }
 
-    public String getName() {
-        return name;
-    }
+    protected String name;
+    protected String food;
+    protected String location;
+
 
     public Animals(String location, String food, String name)
     {
@@ -20,17 +14,5 @@ System.out.println("Some noise...");
         this.food = food;
         this.name = name;
     }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public String getFood() {
-        return food;
-    }
-
-    public abstract void sleep();
-    public abstract  void display();
-    public abstract void eat(String food);
 
 }
